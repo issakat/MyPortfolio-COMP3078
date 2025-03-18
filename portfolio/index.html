@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV template</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+</head>
+<body>
+<section>
+    <!-- MOBILE NAVIGATION -->
+    <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULUM VITAE</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+    </div>
+    <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
+        <a href="#projects" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">PROJECTS</a>
+        <a href="data.html" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">DATA</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+    </div>
+
+    <!-- SOCIAL SECTION -->
+    <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="assets/avatar.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"  alt=""/>
+        <!--SOCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+            <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.facebook.com/" target="_blank">
+                <i data-feather="facebook"></i>
+            </a>
+            <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.instagram.com/" target="_blank">
+                <i data-feather="instagram"></i>
+            </a>
+            <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://x.com/?lang=en-ca" target="_blank">
+                <i data-feather="twitter"></i>
+            </a>
+            <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://ca.linkedin.com/" target="_blank">
+                <i data-feather="linkedin"></i>
+            </a>
+        </div>
+        <!--RESUME DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+            <a href="assets/Resume_GBC.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+                <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+                <span class="w3-margin-left download-text">DOWNLOAD RESUME</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+            <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">MY PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+            <a href="#projects" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">PROJECTS</a>
+            <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+            <a href="data.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">DATA</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+            <!--HOME SECTION-->
+            <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+                <p style="font-style: italic; font-size:x-large;">"I am not what happened to me, I am what I choose to become." - Pursuit of Happyness</p>
+                <h1>Kate Labis (21)</h1>
+                <h2>College Student</h2>
+                <p></p>
+            </div>
+
+            <!--ABOUT SECTION-->
+            <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+                <p class="w3-margin-top-2">
+                    I am a motivated undergraduate student with a strong determination and a passion for learning
+                    and development. I am seeking a position as a Mobile Programmer where my proven and developing
+                    skills will allow me to contribute to the goals of your organization. With hands-on experience
+                    in programming languages such as Java, Swift, and Kotlin, I have successfully developed mobile
+                    applications that prioritize user experience and functionality. My recent project, a task
+                    management app, received positive feedback for its intuitive design and effectiveness,
+                    showcasing my ability to translate ideas into practical solutions.
+                </p>
+                <p class="">
+                    In addition to my technical skills, I excel in collaborative environments, where I can
+                    leverage my strong communication and teamwork abilities. I thrive on challenges and am eager
+                    to learn new technologies that can enhance mobile development. My goal is to contribute to
+                    innovative projects that push the boundaries of mobile technology while continuously growing as
+                    a developer. I am excited about the opportunity to bring my passion and skills to your
+                    organization and help create impactful mobile solutions.
+                </p>
+            </div>
+
+            <!--PROJECTS SECTION-->
+            <div id="projects" class="w3-container w3-margin-top-20-percent w3-cursive">
+                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">PROJECTS</h2>
+                <div class="w3-container w3-margin-top-2 w3-cursive">
+                    <h3 class="w3-border-amber">MY RECENT PROJECTS</h3>
+                    <div class="project">
+                        <h4>Project 1: Community Website</h4>
+                        <p>Developed a community-driven website aims to develop a user-friendly platform for
+                            tracking soccer data and analytics. The website will allow users to manage leagues,
+                            form teams, upload match data, and process secure payments. .</p>
+                        <a href="https://github.com/ElioFezollari/SportTrackr" target="_blank">View Project</a>
+                    </div>
+                    <div class="project">
+                        <h4>Project 2: Mobile Application</h4>
+                        <p>Created a user-friendly app to be used as a time countdown. It sets the timer, pause,
+                        resets, and clean UI implementations.</p>
+                        <a href="https://github.com/issakat/COMP3097-CountdownTimerApp" target="_blank">View Project</a>
+                    </div>
+                    <div class="project">
+                        <h4>Project 3: My Portfolio</h4>
+                        <p>Created a simple navigation of my portfolio with the resume, bio, cover letter, and
+                        projects I've done individually and with groups.</p>
+                        <a href="https://github.com/issakat/MyPortfolio-COMP3078.git" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RESUME -->
+            <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
+
+                <div class="w3-container w3-margin-top-2 w3-cursive">
+                    <!-- EMPLOYMENT HISTORY SECTION -->
+                    <h3 class="w3-border-amber">MY EMPLOYMENT HISTORY</h3>
+
+                    <div class="">
+                        <h4>Community Manager at Company-X</h4>
+                        <p>September 2020 - Present</p>
+                        <ul class="w3-ul" style="font-weight: 500;">
+                            <li>Ensured that published content meets brand guidelines and overall communication styles.</li>
+                            <li>Built relations with the online community.</li>
+                            <li>Implemented social media strategies to increase engagement and followers.</li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <h4>Social Community Manager at Company-Y</h4>
+                        <p>January 2017 - June 2020</p>
+                        <ul class="w3-ul" style="font-weight: 500;">
+                            <li>Ensured that audience growth rate is increasing through social networks.</li>
+                            <li>Managed social media campaigns for various platforms to align with marketing strategies.</li>
+                            <li>Monitored and provided feedback on engagement/conversation via social media channels to leadership.</li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <h4>Technical Assistant at Office Job</h4>
+                        <p>September 2020 - February 2022, Toronto, Ontario</p>
+                        <ul class="w3-ul" style="font-weight: 500;">
+                            <li>Developed and maintained software applications using Python and C++.</li>
+                            <li>Collaborated with cross-functional teams to design and implement new features.</li>
+                            <li>Implemented automated testing procedures, reducing the number of bugs by 30%.</li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <h4>Church Member/Assistant</h4>
+                        <p>July 2016 - December 2023, Toronto, Ontario</p>
+                        <ul class="w3-ul" style="font-weight: 500;">
+                            <li>Assisted with technology, created PowerPoint presentations, and carried out specific tasks.</li>
+                            <li>Worked with staff, adults, elders, and children, including handling money for the church.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- EDUCATION SECTION -->
+                <h3 class="w3-border-amber">EDUCATION</h3>
+                <div class="">
+                    <h4>Computer Technology and Analysis in Technology</h4>
+                    <p>Expected Graduation: 2025</p>
+                    <p>George Brown College, 160 Kendal Ave</p>
+                </div>
+
+                <!-- VOLUNTEER EXPERIENCE SECTION -->
+                <h3 class="w3-border-amber">VOLUNTEER EXPERIENCE</h3>
+                <div class="">
+                    <h4>CO-OP Program</h4>
+                    <p>September 2020 - February 2022</p>
+                    <ul class="w3-ul" style="font-weight: 500;">
+                        <li>Enrolled in this program to train and gain experience in the working field.</li>
+                        <li>Learned and improved technical and communication skills.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--CONTACT SECTION-->
+            <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h2>
+                    <div class="w3-margin-top-2" style="font-weight: 500;">
+                        <p>Name: Kate Labis</p>
+                        <p>Address: 160 Kendal Avenue, Toronto ON M5R 1M3</p>
+                        <p>Phone number: (416)415-2000</p>
+                        <p>E-mail: kate.labis@georgebrown.ca</p>
+                    </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+                <p>© 2025 - Kate Labis</p>
+                <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="#home" target="_blank">Back up</a>
+            </footer>
+        </div>
+    </section>
+</section>
+<script>
+    function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+            nav.classList.remove('w3-show');
+        } else {
+            nav.classList.add('w3-show');
+        }
+    }
+</script>
+<script>
+    // Script to load feather icons
+    feather.replace()
+</script>
+</body>
+</html>

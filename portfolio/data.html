@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Template</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/data.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+</head>
+<body>
+<section>
+    <!-- MOBILE NAVIGATION -->
+    <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-none">MY PORTFOLIO</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+    </div>
+    <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="index.html" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">HOME</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+        <a href="#philosophy" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">PHILOSOPHY</a>
+        <a href="#academic-credentials" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CREDENTIALS</a>
+        <a href="#professional-summary" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">SUMMARY</a>
+        <a href="#work-experience" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">EXPERIENCE</a>
+
+    </div>
+
+    <!-- SOCIAL SECTION -->
+    <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!-- IMAGE/AVATAR -->
+        <img src="assets/avatar.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;" alt="User  Avatar"/>
+        <!-- SOCIAL NETWORK BUTTONS -->
+        <div class="links w3-margin-top w3-padding-small">
+            <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.facebook.com/" target="_blank">
+                <i data-feather="facebook"></i>
+            </a>
+            <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.instagram.com/" target="_blank">
+                <i data-feather="instagram"></i>
+            </a>
+            <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://x.com/?lang=en-ca" target="_blank">
+                <i data-feather="twitter"></i>
+            </a>
+            <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://ca.linkedin.com/" target="_blank">
+                <i data-feather="linkedin"></i>
+            </a>
+        </div>
+        <!-- CV DOWNLOAD BUTTON -->
+        <div class="w3-container w3-padding-16">
+            <a href="assets/Resume_GBC.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+                <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+                <span class="w3-margin-left download-text">DOWNLOAD RESUME</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- CV CONTENT SECTION -->
+    <section class="w3-threequarter w3-padding-large w3-right">
+        <!-- DESKTOP NAVIGATION -->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+            <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">HOME</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w 3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+            <a href="#cover-letter" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">COVER</a>
+            <a href="#philosophy" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">PHILOSOPHY</a>
+            <a href="#academic-credentials" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CREDENTIALS</a>
+            <a href="#work-experience" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">EXPERIENCE</a>
+            <a href="#professional-summary" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">SUMMARY</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+            <!-- HOME SECTION -->
+            <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+                <p style="font-style: italic; font-size:x-large;">"I am not what happened to me, I am what I choose to become." - Pursuit of Happyness</p>
+                <h1>Kate Labis (21)</h1>
+                <h2>College Student</h2>
+                <p></p>
+            </div>
+
+            <!-- COVER LETTER SECTION -->
+            <div id="cover-letter" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">COVER LETTER</h2>
+                <p class="w3-margin-top-2">
+                    Dear [Hiring Manager's Name],
+                </p>
+                <p>
+                    I am writing to express my interest in the Mobile Programmer position at [Company Name] as
+                    advertised on [where you found the job listing]. As a motivated undergraduate student pursuing
+                    a degree in Computer Technology, I have developed a strong foundation in mobile application
+                    development and a passion for creating innovative solutions that enhance user experiences. I am
+                    excited about the opportunity to contribute my skills and enthusiasm to your team.
+                </p>
+                <p>
+                    Throughout my academic career, I have gained hands-on experience in programming languages such as
+                    Java, Swift, and Kotlin. My recent project involved developing a task management app that not only
+                    improved my technical skills but also taught me the importance of user-centered design. I am
+                    particularly drawn to [Company Name] because of your commitment to [specific aspect of the company
+                    or its projects that you admire], and I believe my background in mobile programming aligns well with
+                    your goals.
+                </p>
+                <p>
+                    I am eager to bring my strong problem-solving abilities, collaborative spirit, and passion for mobile
+                    technology to [Company Name]. I am confident that my dedication to continuous learning and my proactive
+                    approach to challenges will make me a valuable asset to your team. Thank you for considering my application.
+                    I look forward to the opportunity to discuss how I can contribute to the success of your organization.
+                </p>
+                <p>
+                    Sincerely,<br>
+                    Kate Labis<br>
+                    (416)415-2000<br>
+                    kate.labis@georgebrown.ca
+                </p>
+            </div>
+
+            <!-- PHILOSOPHY/STATEMENT OF CAREER GOAL SECTION -->
+            <div id="philosophy" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">PHILOSOPHY OF CAREER GOAL</h2>
+                <p>
+                    "We are the facilitators of our own creative evolution." - Bill Hicks
+                </p>
+                <p>
+                    My career philosophy is rooted in the belief that continuous learning and adaptability are essential for
+                    personal and professional growth. I am motivated by the desire to create meaningful solutions that enhance
+                    user experiences and contribute positively to society. I believe that my role as a developer extends beyond
+                    writing code; it involves understanding user needs, collaborating with diverse teams, and embracing
+                    challenges as opportunities for innovation. My experiences, such as developing a task management app, have
+                    taught me the importance of empathy in design and the value of feedback in refining my work.
+                </p>
+                <p>
+                    Currently, I am focused on honing my skills in mobile programming and exploring emerging technologies that
+                    can transform the way we interact with digital platforms. Looking ahead, I aspire to work in an environment
+                    that fosters creativity and encourages collaboration, where I can contribute to projects that push the
+                    boundaries of technology. Ultimately, my goal is to be part of a team that not only drives business success
+                    but also makes a positive impact on users' lives through thoughtful and innovative solutions.
+                </p>
+            </div>
+
+            <!-- ACADEMIC CREDENTIALS SECTION -->
+            <div id="academic-credentials" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ACADEMIC CREDENTIALS</h2>
+                <div class="w3-container w3-margin-top-2 w3-cursive">
+                    <h2>Certificates/Degrees</h2>
+                    <ul>
+                        <li><strong>Computer Technology and Analysis in Technology:</strong> Expected Graduation 2025, George Brown College</li>
+                        <li><strong>High School Diploma:</strong> Marshall McLuhan CSS, Graduated 2022</li>
+                    </ul>
+
+                    <h2>Awards</h2>
+                    <ul>
+                        <li>Ontario Scholar</li>
+                        <li>Honour Roll</li>
+                    </ul>
+
+                    <h2>References</h2>
+                    <p>Available Upon Request</p>
+                </div>
+            </div>
+
+            <!-- ACADEMIC WORK EXPERIENCE SECTION -->
+            <!-- ACADEMIC WORK EXPERIENCE SECTION -->
+            <div id="work-experience" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ACADEMIC WORK EXPERIENCE</h2>
+                <div class="w3-container w3-margin-top-2 w3-cursive">
+                    <ul>
+                        <li><strong>Capstone Project: SportTrackr</strong></li>
+                        <p>SportTrackr is a dynamic software application designed for football enthusiasts to find competitive
+                            leagues, connect with fellow players, and monitor performance. Whether you're a novice or an aspiring
+                            champion, the app simplifies tracking scores, joining leagues, and engaging in real-time conversations
+                            with teammates. With an intuitive UI and cutting-edge features, SportTrackr ensures that users stay
+                            connected and enjoy every moment of the game.</p>
+
+                        <li><strong>Project Summary:</strong>
+                            The SportTrackr app serves as an interactive platform for football
+                            players, enabling them to engage, compete, and express their passion for the game. The app aims to
+                            create a vibrant community of players who share similar interests and wish to play football in a friendly
+                            yet competitive environment.</li>
+
+                        <li><strong>Project Vision:</strong>
+                            The purpose of this Project Vision Document is to outline the objectives, goals, and strategic direction
+                            or the development of SportTrackr. This document acts as a roadmap for coordinating the app's vision and
+                            objectives among users, developers, and stakeholders.</li>
+
+                        <li><strong>Project/Business Requirements:</strong>
+                            The project will focus on designing, developing, and launching the SportTrackr app, providing users with
+                            a comprehensive platform for locating leagues, keeping score, and interacting with teammates. Key
+                            requirements include user registration, league search functionality, score tracking, and real-time
+                            communication features.</li>
+
+                        <li><strong>Project Plan:</strong>
+                            The project will follow an agile development methodology, with iterative cycles for design, development,
+                            testing, and deployment. Regular feedback from users and stakeholders will be incorporated to ensure the
+                            app meets user needs and expectations.</li>
+
+                        <li><strong>Requirements Analysis and Design:</strong>
+                            The requirements analysis will involve gathering input from potential users to identify essential features
+                            and functionalities. The design phase will focus on creating wireframes and mockups to visualize the user
+                            interface and user experience.</li>
+
+                        <li><strong>Wireframes/Mockups:</strong>
+                            Wireframes and mockups will be developed to illustrate the app's layout and functionality, ensuring that
+                            the design aligns with user expectations and enhances usability.</li>
+
+                        <li><strong>Status Reports:</strong>
+                            Regular status reports will be generated to track project progress, identify potential risks, and
+                            communicate updates to stakeholders.</li>
+
+                        <li><strong>System Implementation:</strong>
+                            The implementation phase will involve coding the application, integrating necessary APIs, and conducting
+                            thorough testing to ensure a seamless user experience before launch.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- PROFESSIONAL SUMMARY SECTION -->
+            <div id="professional-summary" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">PROFESSIONAL SUMMARY</h2>
+                <div class="w3-container w3-margin-top-2 w3-cursive">
+                    <h2>Professional Work Samples</h2>
+                    <ul>
+                        <li><strong>#1:</strong> Developed a task management app that allows users to organize their daily
+                            activities efficiently, featuring a user-friendly interface and real-time notifications.</li>
+                        <li><strong>#2:</strong> Created a portfolio website showcasing my projects and skills, utilizing
+                            HTML, CSS, and JavaScript to enhance user experience and accessibility.</li>
+                        <li><strong>#3:</strong> Contributed to the development of SportTrackr, a mobile application for
+                            football enthusiasts, which helps users find leagues, track scores, and communicate with teammates.</li>
+                    </ul>
+
+                    <h2>Community Service/Volunteer Work</h2>
+                    <ul>
+                        <li>Volunteered as a Church Assistant, where I assisted with technology, created PowerPoint presentations,
+                            and supported various community events.</li>
+                        <li>Participated in local community clean-up initiatives, promoting environmental awareness and community engagement.</li>
+                    </ul>
+
+                    <h2>Copies of Letters of Recommendation</h2>
+                    <p>Available upon request. I have received positive feedback from professors and supervisors regarding my work ethic
+                        and technical skills.</p>
+
+                    <h2>Copies of Awards and Recognition</h2>
+                    <p>Ontario Scholar and Honour Roll recipient, recognizing my academic achievements and commitment to excellence in my studies.</p>
+                </div>
+            </div>
+
+            <!-- CONTACT SECTION -->
+            <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+                <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h2>
+                <div class="w3-margin-top-2" style="font-weight: 500;">
+                    <p>Name: Kate Labis</p>
+                    <p>Address: 160 Kendal Avenue, Toronto ON M5R 1M3</p>
+                    <p>Phone number: (416)-415-2000</p>
+                    <p>E-mail: kate.labis@georgebrown.ca</p>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+                <p>© 2025 - Kate Labis</p>
+                <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="#home" target="_blank">Back up</a>
+            </footer>
+        </div>
+    </section>
+</section>
+<script>
+    // Function to toggle mobile navigation
+    function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        nav.classList.toggle('w3-show');
+    }
+</script>
+<script>
+    // Script to load feather icons
+    feather.replace();
+</script>
+</body>
+</html>
